@@ -6,7 +6,7 @@ Prácticas de la asignatura "Programación Web" 23/24 (UGR, ETSIIT).
 
 Este proyecto es una página web full stack para un museo, desarrollada con HTML, CSS y JavaScript en el frontend, y PHP en el backend. Permite a los usuarios iniciar sesión, o dejar comentarios entre otros y, en el caso del administrador, añadir nuevas obras. Al ser mi primer proyecto web, es posible que hubiera aspectos muy mejorables.
 
-[![Captura.png](https://i.postimg.cc/JnW24BQZ/Captura.png)](https://postimg.cc/kVfcTGzg)
+[![Home.png](https://i.postimg.cc/xdwxCb9n/Captura.png)](https://postimg.cc/xkPyp8k4)
 
 [![Visita.png](https://i.postimg.cc/NMtFBp2t/Captura.png)](https://postimg.cc/Z9f4LPLs)
 
