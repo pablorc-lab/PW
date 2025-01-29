@@ -1,6 +1,6 @@
 # PW
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,php)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,php,mysql)](https://skillicons.dev)
 
 Prácticas de la asignatura "Programación Web" 23/24 (UGR, ETSIIT).  
 
