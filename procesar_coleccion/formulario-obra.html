@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Obra</title>
+    <link rel = "stylesheet" type = "text/css" href = "formulario-obra-style.css" />
+
+</head>
+<body>
+    <h2 style="text-align: center; text-transform: uppercase;">Inserte los datos de la obra</h2>
+    <form id="formulario" method="post" action="aniadir_obra.php">
+        <input class="campo" type="text" id="titulo" name="titulo" placeholder="Título"><br>
+        <input class="campo" type="text" id="autor" name="autor" placeholder="Autor"><br>
+        <input class="campo" type="text" id="anio" name="anio" placeholder="Año"><br>
+        <input class="campo" type="text" id="categoria" name="categoria" placeholder="Categoría"><br>
+        <input class="campo" type="text" id="ruta_imagen" name="ruta_imagen" placeholder="Nombre imagen (directorio '/imagenes')"><br><br>
+        
+        <input id="boton" type="submit" value="Añadir">
+    </form>
+    
+    <script src="aniadir-obra.js"></script>
+
+</body>
+</html>

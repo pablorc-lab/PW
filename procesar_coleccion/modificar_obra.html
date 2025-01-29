@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Modificar Obra</title>
+    <link rel="stylesheet" type="text/css" href="formulario-obra-style.css">
+</head>
+<body>
+    <h2 style="text-align: center; text-transform: uppercase;">Modificar datos de la obra</h2>
+    <form id="formulario" method="post" action="modificar_obra.php">
+        <!-- Input oculto para almacenar el título original de la obra -->
+        <input type="hidden" id="titulo_original" name="titulo_original" >
+        <!-- Input para modificar el título -->
+        <input class="campo" type="text" id="titulo" name="titulo" placeholder="Título" ><br>
+        <!-- Input para modificar el autor -->
+        <input class="campo" type="text" id="autor" name="autor" placeholder="Autor"><br>
+        <!-- Input para modificar el año -->
+        <input class="campo" type="text" id="anio" name="anio" placeholder="Año"><br>
+        <!-- Input para modificar la categoría -->
+        <input class="campo" type="text" id="categoria" name="categoria" placeholder="Categoría" ><br>
+        <!-- Input oculto para almacenar la ruta original de la imagen -->
+        <input type="hidden" id="ruta_original" name="ruta_original">
+        <!-- Input para modificar la ruta de la imagen -->
+        <input class="campo" type="text" id="ruta_imagen" name="ruta_imagen" placeholder="Nombre imagen (directorio '/imagenes')"><br><br>
+        <!-- Botón de submit para enviar los datos del formulario -->
+        <input style="cursor: pointer;" id="boton" type="submit" value="Modificar datos">
+    </form>
+
+    <script src="aniadir-obra.js"></script>
+
+</body>
+</html>

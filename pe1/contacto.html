@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Contacto</title>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "contacto-style.css" />
+  </head>
+
+  <body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="../index.php">Inicio</a></li>
+          <li><a href="../procesar_coleccion/coleccion.php">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="../procesar_comentarios/experiencias.php">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form>
+            <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+            <input class="credenciales" type="text" id="campoUsuario" name="campoUsuario" placeholder="Usuario">
+            <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña"> <br>
+            <button type="submit" id="botonInicioSesion">Iniciar sesión</button>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header> 
+    
+    <main>
+      <a href="../como_se_hizo.pdf" style="text-decoration:none; margin:10px auto; background-color: rgb(245, 241, 26); border-radius: 15px;">
+        <h1 style="color: black; padding: 0 10px;">COMO_SE_HIZO (PDF 'pe2')</h1>
+      </a>
+
+      <section>
+        <h1>Pablo Ramblado Carrasco </h1>
+        <ul>
+          <li>Programación Web</li>
+          <li>Subgrupo <strong>A2</strong></li>
+          <li><a href="mailto:pabloramblado@correo.ugr.es">pabloramblado@correo.ugr.es</a></li>
+        </ul>
+        <p>
+          Práctica Evaluable de la Asignatura "Programación Web", concretamente la página será un 
+          sitio web de un museo, en el que se mostrarán piezas museísticas actualmente en exhibición en 
+          sus diferentes salas. 
+        </p>
+      </section>
+
+        <section class="logos">
+            <img src="imagenes/logo-universidad.png" width="300px" height="300px">
+            <img src="imagenes/logo-etsiit.png"  width="250px" height="300px">
+        </section>
+    </main>
+    <!--Pie de página-->
+    <footer>
+      <a href="contacto.html">Contacto</a>
+      <a href="como_se_hizo.pdf">Informe de la práctica</a>
+    </footer>
+  </body>
+</html>

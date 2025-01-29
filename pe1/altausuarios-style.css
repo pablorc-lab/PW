@@ -1,0 +1,196 @@
+main {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px
+}
+
+/********************************
+  Móvil: 320px <= width <= 679px 
+*******************************/
+@media (min-width: 320px) and (max-width: 679.9px) {
+   
+    main h1{
+        font-size: 25px;
+    }
+
+    main input {
+        height: 30px;
+    }
+    #campoCorreo, #campoDeTelefono { height: 35px;}
+
+    main input, main button, .nacimiento, .politicas{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #label-pais{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .nacimiento {
+        font-size: 12px;
+    }
+
+    .politicas label {font-size: 12px;}
+
+    .boton-envio {font-size: 17px;height: 35px;}
+}
+
+ /************************************
+   Tablet: 680px <= width <= 1444px 
+ ************************************/
+ @media (min-width: 680px) and (max-width: 1444px) {
+    main h1{font-size: 45px;}
+
+    main input {height: 35px;}
+    #campoCorreo, #campoDeTelefono { height: 40px;}
+
+    #label-pais{font-size: 11px;}
+
+    .nacimiento{font-size: 14px;}
+
+    .politicas label {font-size: 15px;}
+
+    .boton-envio {font-size: 17px; height: 40px;}
+}
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+
+    main h1{font-size: 50px;}
+
+    main input {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    #campoCorreo, #campoDeTelefono { height: 45px;}
+
+    #label-pais{font-size: 13px;}
+
+    .nacimiento {font-size: 16px;}
+
+    .politicas label {font-size: 19px;}
+
+    .boton-envio {font-size: 23px; height: 45px;}
+}
+
+
+/***********
+  General
+***********/
+main {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-family:'Helvetica';
+    margin-top: 20px;
+}
+
+main h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: brown;
+    font-weight: bold;
+}
+
+main input {
+    padding-left: 10px;
+    margin-bottom: 28px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(240, 240, 240);
+}
+
+main input::placeholder {
+    font-family:'Courier New', Courier, monospace;
+}
+
+main input:focus {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    border-color: rgb(0, 98, 255);
+}
+
+.contenedor-contraseña, .contenedor-nombre, .localidad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#campoNombre, #campoApellidos {
+    margin-bottom: 16.67px; /*Se le resta la altura del label-pais (11.33px)*/
+}
+
+#campoCorreo, #campoDeTelefono {
+    width: 100%;
+    box-sizing: border-box; 
+}
+main #campoContraseña, main #campoContraseña2, #listaPaises, 
+#campoCiudad, #campoNombre, #campoApellidos {
+    width: 45%;
+}
+
+/*==========
+  LOCALIDAD
+============*/
+#label-pais {
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*=====================
+  FECHA DE NACIMIENTO
+=======================*/
+#campoDeFecha {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.nacimiento {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/*=========
+  POLITICAS
+============*/
+.politicas {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.politicas input {
+    margin: 0;
+    margin-right: 10px;
+    appearance: none;
+    width: 16px; 
+    height: 16px; 
+    border-radius: 4px; /* Borde redondeado del cuadrado */   
+}
+
+.politicas strong {
+    color: rgb(4, 144, 209);
+    font-weight: bold;
+}
+
+.politicas input:checked {
+    background-color: rgb(4, 144, 209);
+}
+
+/*=====================
+  BOTON DEL REGISTRO
+=======================*/
+.boton-envio {
+    margin-bottom: 40px;
+    border: 1px solid rgb(4, 175, 255);
+    border-radius: 20px;
+    background-color: rgb(4, 175, 255);
+    padding: 10px 0px;
+
+    color: white;
+    width: 100%;
+}

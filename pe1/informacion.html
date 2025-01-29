@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Información</title>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "informacion-style.css" />
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="coleccion.html">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form>
+            <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+            <input class="credenciales" type="text" id="campoUsuario" name="campoUsuario" placeholder="Usuario">
+            <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña"> <br>
+            <button type="submit" id="botonInicioSesion">Iniciar sesión</button>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header> 
+      
+    <!--Contenido principal-->
+    <main>
+      <section class="contenedor-tablas">
+        <table class="tableHorarios">
+          <caption>Horarios</caption>
+          <thead>
+            <tr>
+              <th>Días</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="row-horario-1"><em>Lunes - Jueves</em></td>
+              <td id="row-horario-1">9:00 - 20:00</td>
+            </tr>
+            <tr>
+              <td><em>Viernes - Sábado</em></td>
+              <td>9:00 - 13:00</td>
+            </tr>
+            <tr>
+              <td><em>Domingo / Festivos</em></td>
+              <td>Cerrado</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <table class="tablePrecios">
+          <caption>Tarifas</caption>
+          <thead>
+            <tr>
+              <th>Modalidad</th>
+              <th id="general">General</th>
+              <th id="reducida">Reducida</th>
+              <th id="escolar">Escolar </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><em>Museo</em></td>
+              <td >10,00 €</td>
+              <td>15,00 €</td>
+              <td>5,50 €</td>
+            </tr>
+            <tr>
+              <td><em>Visita guiada</em></td>
+              <td>3,00 €</td>
+              <td>2,00 €</td>
+              <td>2,00 €</td>
+            </tr>
+            <tr>
+              <td><em>Audiovisual</em></td>
+              <td>10,00 €</td>
+              <td>10,00 €</td>
+              <td>10,00 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      <table class="tablaCalendario">
+        <caption>
+          <h1>Calendario apertura</h1>
+          <ul>
+            <li id="completa">Apertura completa</li>
+            <li id="mañana">Apertura de mañana</li>
+            <li id="cierre">Cierre</li>
+          </ul>
+        </caption>
+        <thead>
+          <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sá</th>
+            <th>Do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="abril" colspan="7">Abril 2024</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+          </tr>
+          <tr>
+            <td id="mayo" colspan="7">Mayo 2024</td>
+          </tr>
+          <tr>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+          </tr>
+          <tr>
+            <td id="junio" colspan="7">Junio 2024</td>
+          </tr>
+          <tr>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td style="background-color: white; border: 0;"></td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--INFORMACIÓN Y UBICACIÓN-->
+      <section>
+        <h2>¡Conócenos!</h2>
+        <section class="contenedor-info">
+          <p>
+            <strong>Correo</strong> :
+            <a href="mailto:correomuseo@example.com">correo-museo@example.com</a>
+          </p>
+          <p><strong>Teléfono</strong> : +34 666 666 666</p>
+          <p><strong>Ubicación</strong> : C. Ejemplo, s/n, Chana, 18014 Granada</p>
+        </section>
+        <iframe id="ubicacion"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.133645648239!2d-3.627125625142052!3d37.19705497213667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc55025f928b%3A0x4dbbca09efdcad08!2sE.T.S.%20de%20Ingenier%C3%ADas%20Inform%C3%A1tica%20y%20de%20Telecomunicaci%C3%B3n!5e0!3m2!1ses!2ses!4v1713896725536!5m2!1ses!2ses" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+    </main>      
+      
+      <!--Pie de página-->
+      <footer>
+        <a href="contacto.html">Contacto</a>
+        <a href="como_se_hizo.pdf">Informe de la práctica</a>
+      </footer>
+</body>
+</html>

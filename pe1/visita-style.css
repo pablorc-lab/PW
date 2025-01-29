@@ -1,0 +1,174 @@
+
+main {
+    font-family: 'Helvetica';
+}
+/********************************
+  Móvil: 320px <= width <= 679px 
+*******************************/
+@media (min-width: 320px) and (max-width: 679.9px) {
+    main img {
+        width: 80%;
+    }
+
+    .areas h2 {font-size: 20px;}
+    .areas p {font-size: 15px;}
+
+    .plano1 h1, .plano2 h1{font-size:35px;}
+
+    .zona p {font-size: 15px;}
+
+    .zona h2{font-size: 11px;}
+
+    .plano1, .plano2 {margin-bottom: 5px;}
+}
+
+
+
+ /************************************
+   Tablet: 680px <= width <= 1444px 
+ ************************************/
+ @media (min-width: 680px) and (max-width: 1444px) {
+    
+    .areas h2 {font-size: 25px;}
+
+    .plano1 h1, .plano2 h1{font-size:40px;}
+
+    .zona p {font-size: 20px;}
+
+    .zona h2{font-size: 15px;}
+
+    .plano1, .plano2 {margin-bottom: 5px;}
+}
+
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+    .plano1, .plano2 {margin-bottom: 120px;}
+
+    .plano1 img{width: 60%;}
+
+    .plano2 img{width: 100%;}
+
+    .areas h2 {font-size: 30px;}
+    .areas p {font-size: 25px;}
+
+    .plano1 h1, .plano2 h1{font-size:55px;}
+
+    .zona p {font-size: 25px;}
+
+    .zona h2{font-size: 18px;}
+
+    
+}
+
+
+/****************
+    GENERAL
+****************/
+main img{margin: auto;}
+
+/*==================
+   RECUADROS AREAS
+====================*/
+.areas {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 40px;
+}
+
+.areas h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.areas p{
+    color: rgb(252, 250, 250);
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.area1{
+    background-color: #2c2c2c; 
+    width: 25%;
+    padding-left: 20px;
+}
+
+.area2{
+    background-color: #7b99c8;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.area3{
+    background-color: #8fc2bf;
+    width: 25%;
+    padding-left: 20px;
+}
+
+
+
+/*==================
+   IMÁGENES PLANOS
+====================*/
+.plano1, .plano2 {
+    display: grid;
+    justify-content: center;
+}
+
+.plano1 h1, .plano2 h1{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 80px;
+}
+
+.columna-p1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.columna-1, .columna-2{
+    display: inline-block; /*NO HACE FALTA*/
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plano2 h1{
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.contenedor-columnas, .contenedor-columnas-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-columnas-2 {
+    margin-bottom: 60px;
+}
+
+.zona {
+    display: grid;
+    margin: 5px 25px;
+}
+
+.zona p{
+    margin: 0;
+    margin-bottom: 25px;
+    color: brown;
+    font-weight: bold;
+}
+
+.zona h2 {
+    color: #727272;
+    margin:0;
+    font-weight: normal;
+}
+

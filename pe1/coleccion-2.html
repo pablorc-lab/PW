@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Colección</title>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "coleccion-style.css" />
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="coleccion.html">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form>
+            <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+            <input class="credenciales" type="text" id="campoUsuario" name="campoUsuario" placeholder="Usuario">
+            <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña"> <br>
+            <button type="submit" id="botonInicioSesion">Iniciar sesión</button>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header>  
+      
+      <!--Contenido principal-->
+      <main>
+        <section class="menu">
+          <nav>
+            <h1>AUTORES</h1>
+            <ul>
+              <li><a href="coleccion_anonimo.html">Anónimo</a></li>
+              <li><a href="coleccion_gustav.html">Gustav Klimit</a></li>
+              <li><a href="coleccion-giotto.html">Giotto Di Bondone</a></li>
+            </ul>
+
+            <h1>TEMA</h1>
+            <ul>
+              <li><a href="coleccion-barroco.html">Barroco</a></li>
+              <li><a href="coleccion-realismo.html">Realismo</a></li>
+              <li><a href="coleccion-impresionismo.html">Impresionismo</a></li>
+            </ul>
+
+            <h1>ÉPOCA</h1>
+            <ul>
+              <li><a href="coleccion-400ac.html">400 a.C</a></li>
+              <li><a href="coleccion-1300.html">1300</a></li>
+              <li><a href="coleccion-2000.html">2000</a></li>
+            </ul>
+          </nav>
+        </section>
+        
+        <section class="galeria">
+          <section class="fila">
+            <section class="imagen">
+              <a href="obra-1.html">
+                <img src="imagenes/galeria-13.webp">
+              </a>
+              <h2>Monje</h2>
+              <p>Gustav Klimint</p>
+              <p>400 a.C</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-2.html">
+                <img src="imagenes/galeria-14.jpg">
+              </a>
+              <h2>Agonía</h2>
+              <p>Anónimo</p>
+              <p>2000</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-3.html">
+                <img src="imagenes/galeria-15.jpg">
+              </a>
+              <h2>Salvaje</h2>
+              <p>Giotto Di Bondone</p>
+              <p>1300</p>
+            </section>
+          </section>
+        
+          <section class="fila">
+            <section class="imagen">
+              <a href="obra-3.html">
+                <img src="imagenes/galeria-16.jpg">
+              </a>
+              <h2>Melancolía</h2>
+              <p>Giotto Di Bondone</p>
+              <p>1300</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-5.html">
+                <img src="imagenes/galeria-17.jpg">
+              </a>
+              <h2>El enredo</h2>
+              <p>Gustav Klimint</p>
+              <p>400 a.C</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-6.html">
+                <img src="imagenes/galeria-18.webp">
+              </a>
+              <h2>Ciclo de vida</h2>
+              <p>Anónimo</p>
+              <p>2000</p>
+            </section>
+          </section>
+        
+          <section class="fila">
+            <section class="imagen">
+              <a href="obra-1.html">
+                <img src="imagenes/galeria-19.webp">
+              </a>
+              <h2>Chica francesa</h2>
+              <p>Giotto Di Bondone</p>
+              <p>400 a.C</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-2.html">
+                <img src="imagenes/galeria-20.jpg">
+              </a>
+              <h2>Monarquía</h2>
+              <p>Giotto Di Bondone</p>
+              <p>400 a.C</p>
+            </section>
+            <section class="imagen">
+              <a href="obra-3.html">
+                <img src="imagenes/galeria-21.jpg">
+              </a>
+              <h2>Ángel caido</h2>
+              <p>Anónimo</p>
+              <p>1300</p>
+            </section>
+          </section>
+
+        </section>  
+    </main>    
+
+    <section class="boton-ant" >
+      <button type="button"><a href="coleccion.html">Anterior</a></button>
+    </section>
+      
+    <!--Pie de página-->
+    <footer>
+      <a href="contacto.html">Contacto</a>
+      <a href="como_se_hizo.pdf">Informe de la práctica</a>
+    </footer>
+</body>
+</html>

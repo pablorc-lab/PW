@@ -1,0 +1,348 @@
+main {
+  font-family: 'Helvetica';
+  margin-bottom: 150px;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.tableHorarios caption, .tablePrecios caption,
+.tablaCalendario caption h1, section h2{
+  letter-spacing: 2px;
+}
+
+.tableHorarios caption, .tablePrecios caption {
+  text-align: left;
+  color: brown;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.tableHorarios, .tablePrecios {
+  background-color:#ffffd8;
+  box-shadow: 10px 10px 7px rgb(149, 148, 148);
+  padding: 10px;
+  margin: 0px 10px;
+}
+
+
+/***********************
+  Móvil: 320 <= width <= 679px 
+************************/
+@media (max-width: 679px) {
+  
+  /*TABLA HORARIO Y PRECIOS*/
+  .tableHorarios td:nth-child(1) {width: 170px;}  
+
+  .tableHorarios,.tablePrecios {
+    font-size: 15px;
+  }
+
+  .tableHorarios caption, .tablePrecios caption,
+  .tablaCalendario caption h1{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /*TABLA CALENDARIO*/
+  .tablaCalendario {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .tablaCalendario caption ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tablaCalendario caption li { font-size: 17px;}
+
+  .tablaCalendario td {
+    text-align: left;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-bottom: 50px;
+    padding-top: 5px;
+  }
+
+  /*UBICACION*/
+  #ubicacion {
+    height: 200px;
+  }
+
+  .contenedor-info {font-size: 17px;}
+
+}
+
+
+/************************************
+ Tablet: 680px <= width <= 1444px 
+************************************/
+@media (min-width: 680px) and (max-width: 1444px) {
+  
+  /*TABLA HORARIO Y PRECIOS*/
+  .tableHorarios td:nth-child(1) {width: 170px;}  
+
+
+  .tablePrecios td:nth-child(1) {width: 100px;}  
+
+
+  .tableHorarios,.tablePrecios {
+    font-size: 15px;
+  }
+
+  .tableHorarios caption, .tablePrecios caption,
+  .tablaCalendario caption h1, section h2 {
+    font-size: 35px;
+  }
+
+  /*TABLA CALENDARIO*/
+  .tablaCalendario {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .tablaCalendario caption ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tablaCalendario caption li { font-size: 17px;}
+
+  .tablaCalendario td {
+    text-align: left;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-bottom: 70px;
+    padding-top: 5px;
+  }
+
+  .contenedor-info {font-size: 17px;}
+}
+
+
+/*************************
+Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+
+  .tablaCalendario {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .tableHorarios caption, .tablePrecios caption, 
+  .tablaCalendario caption h1, section h2{
+    font-size: 50px;
+  }
+
+  .tableHorarios,.tablePrecios {font-size: 20px;}
+
+  /*TABLA HORARIOS*/
+  .tableHorarios td:nth-child(1) {width: 220px;}  
+  
+  /*TABLA PRECIOS*/
+  .tablePrecios td:nth-child(1) {width: 200px;}  
+
+  /*TABLA CALENDARIO*/
+  .tablaCalendario caption ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tablaCalendario caption li { font-size: 21px;}
+
+  .tablaCalendario td {
+    text-align: left;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-bottom: 70px;
+    padding-top: 5px;
+  }
+
+  .contenedor-info { font-size: 20px;}
+}
+
+
+/*********
+  GENERAL
+***********/
+@media (min-width: 320px) {
+  
+  /*TABLA HORARIOS*/
+  .tableHorarios {
+    text-align: left;
+  }
+
+  #row-horario-1 {padding-top: 20px;}
+  
+  .tableHorarios td {padding: 10px 0px;}
+
+  /*TABLA PRECIOS*/
+  #general, #reducida, #escolar {width: 140px;  }
+  
+  .tablePrecios th{padding-bottom: 20px;}
+  
+  .tablePrecios td {padding: 10px 0px;}
+  
+  /*TABLA CALENDARIO*/ 
+  .tablaCalendario caption h1{
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .tablaCalendario caption li {
+    margin: 10px 35px;
+  }
+  
+  .tablaCalendario th {
+    padding: 15px 5px;
+  }
+
+  #abril, #mayo, #junio {
+    background: rgb(203, 203, 203);
+    text-align: center;
+    padding: 14px 0px;
+    font-size: 20px;
+    border-radius: 0px;
+  }
+}
+
+
+/*======================
+  TABLA DE LOS HORARIOS
+========================*/
+.contenedor-tablas {
+  margin-top: 30px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tableHorarios {
+  text-align: left;
+}
+
+.tableHorarios th{
+  border-bottom: 1px solid rgb(157, 157, 157);
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+
+
+/*=====================
+  TABLA DE LOS PRECIOS
+=======================*/
+.tablePrecios {
+  text-align: center;
+}
+
+/* Alineamos a la izquierda el texto de la 1 columna*/
+.tablePrecios td:nth-child(1) {
+  text-align: left;
+}
+
+#general, #reducida, #escolar {
+  text-align: center;
+}
+
+.tablePrecios th{
+  text-align: left;
+  border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+/*=====================
+  TABLA DEL CALENDARIO
+=======================*/
+.tablaCalendario {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  width: 100%;  
+}
+
+.tablaCalendario caption h1{
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+}
+
+.tablaCalendario caption ul{
+  padding: 0px;
+}
+
+.tablaCalendario caption li {
+  list-style:square;
+  font-weight: bold;
+}
+
+#completa{color: #90EE90;}
+#mañana{color: #f1ac50;}
+#cierre {color: #ec5252;}
+
+.tablaCalendario th {
+  background-color: rgb(181, 210, 254);
+  position: sticky;
+  top: 0px;
+  border:1px solid rgb(2, 17, 58);
+}
+
+#abril, #mayo, #junio {
+  background: rgb(203, 203, 203);
+  text-align: center;
+  border-radius: 0px;
+}
+
+.tablaCalendario td {
+  background: linear-gradient(#ffffd8,rgb(255, 222, 222));
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/*Añadimos colores segun el tipo de dia*/
+.tablaCalendario td:nth-child(7) {
+  background: #ec5252;
+}
+
+.tablaCalendario td:nth-child(n+1):nth-child(-n+4){
+  background: #90EE90;
+}
+
+.tablaCalendario td:nth-child(n+5):nth-child(-n+6) {
+  background: #f1ac50;
+}
+
+
+/*=====================
+  ZONA DE LA UBICACIÓN
+=======================*/
+section {
+  margin-top: 100px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: brown;
+  font-weight: bold;
+}
+
+.contenedor-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contenedor-info p{
+  padding: 0px 10px;
+}
+
+
+#ubicacion {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}

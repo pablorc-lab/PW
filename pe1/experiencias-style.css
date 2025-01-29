@@ -1,0 +1,282 @@
+/***********************
+  Móvil: 320px <= width <= 679px 
+************************/
+@media (min-width: 320px) and (max-width: 679px) {
+     /*Titulos H1*/
+     #h1-opiniones, #h1-formulario{
+        font-size: 35px;
+    }
+    
+    /*LOGO Y PUNTUACIÓN*/
+    .puntuacion section { font-size: 25px;}
+
+    .puntuacion img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #opinion{font-size: 20px;}
+
+    #reseña-titulo {font-size: 20px;}
+    #reseña-texto{
+        width: 70vw;
+        font-size: 16px;
+    }
+        
+    .reseña-valoracion label {
+        padding: 8px 15px;
+        font-size: 24px;
+    }
+
+    #valoracion1 {padding: 0;}
+} 
+ 
+@media (max-width: 399px) {
+    #reseña-titulo, #reseña-texto, .boton-envio{
+        margin: 0px 10px;
+    }
+
+    .reseña-valoracion label {
+        padding: 5px 11px;
+        font-size: 23px;
+    }
+
+    #reseña-texto{width: 250px;}     
+} 
+
+
+ /************************************
+   Tablet: 680px <= width <= 1444px 
+ ************************************/
+ @media (min-width: 680px) and (max-width: 1444px) {
+
+    /*Titulos H1*/
+    #h1-opiniones, #h1-formulario{
+        font-size: 50px;
+    }
+    
+    /*LOGO Y PUNTUACIÓN*/
+    .puntuacion section {
+        font-size: 25px;
+    }
+
+    .puntuacion img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .cotenedor-puntuacion {    
+        width: calc(50% - 140px); /* 50% del ancho del contenedor principal menos el margen */
+    }
+
+    /*OPININONES*/
+    #opinion{
+        font-size: 20px;
+    }
+
+    /*FORMULARIO*/  
+    .reseña-valoracion label {
+        padding: 8px 15px;
+        font-size: 24px;
+    }
+    
+    #reseña-titulo {font-size: 20px;}
+    #reseña-texto{
+        width: 550px;
+        font-size: 18px;
+    }
+    
+    .boton-envio {
+        font-size: 17px;
+    }
+ }
+ 
+ 
+ /*************************
+   Monitor: 1445px <= width 
+ **************************/
+ @media (min-width: 1445px) {
+      /*Titulos H1*/
+    #h1-opiniones, #h1-formulario{
+        font-size: 50px;
+    }
+    
+    /*LOGO Y PUNTUACIÓN*/
+    .puntuacion section {
+        font-size: 30px;
+    }
+
+    .puntuacion img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cotenedor-puntuacion {    
+        width: calc(50% - 280px); /* 50% del ancho del contenedor principal menos el margen */
+    }
+
+    /*OPININONES*/
+    #opinion{
+        font-size: 25px;
+    }
+
+    /*FORMULARIO*/  
+    .reseña-valoracion label {
+        padding: 10px 20px;
+        font-size: 35px;
+    }
+
+    #reseña-titulo {
+        font-size: 26px;
+    }
+    
+    #reseña-texto{
+        width: 60vw;
+        font-size: 20px;
+    }
+    
+    .boton-envio {
+        font-size: 19px;
+    }
+ }
+ 
+/*********
+  GENERAL 
+ *********/
+/*=============
+  VALORACIONES 
+===============*/
+ main {
+    font-family:'Helvetica';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main h1 {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    color: brown;
+    font-weight: bold;
+}
+
+#h1-opiniones{
+    margin-top: 50px;
+}
+
+#opinion {
+    padding: 15px 10px;
+}
+
+.cotenedor-puntuacion {
+    margin: 20px 20px;
+    padding: 15px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.puntuacion {
+    display: flex;
+    align-items: center;
+}
+
+main img{
+    opacity: 0.75;
+    border-radius: 35px;
+    padding-top: 3px;
+}
+
+.puntuacion section{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+main section p{
+    margin: 0px 0px;
+}
+
+#puntuacion {
+    color: rgb(185, 150, 34);
+}
+
+/*======================
+  FORMULARIO OPINIÓN
+========================*/
+#h1-formulario {
+    margin-top: 80px;
+}
+
+main form {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+
+main form label {
+    padding: 10px;
+}
+
+.reseña-valoracion {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reseña-valoracion input {
+    appearance: none; /*QUITAMOS EL CIRCULO*/
+    padding: 0 10px;
+}
+
+.reseña-valoracion label {
+    cursor: pointer;
+    color: rgb(235, 234, 234); /* Color de las estrellas no seleccionadas */
+    background-color: rgb(63, 63, 63);
+    border-radius: 40px;
+}
+
+.reseña-valoracion input:checked + label {
+    transition: 0.3s;
+    background-color: rgb(255, 196, 0);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+#valoracion1 {
+    margin-left: 0px;
+}
+
+#reseña-titulo{
+    text-align: left;
+    padding: 10px 0px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#reseña-texto {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(4, 175, 255);
+    border-radius: 10px;
+    height: 200px;
+    padding: 10px;
+}
+
+#reseña-texto:focus {
+    outline: none; /* Elimina el contorno predeterminado al enfocar */
+    border-color: rgb(4, 175, 255);
+}
+
+.boton-envio{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 175, 255);
+    border: 0;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+

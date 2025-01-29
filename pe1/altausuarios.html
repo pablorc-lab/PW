@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Registro de usuarios</title>
+    <script src="../procesar_usuarios/verificar_registro.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "altausuarios-style.css" />
+
+  </head>
+
+  <body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="../procesar_usuarios/index.php">Inicio</a></li>
+          <li><a href="../procesar_coleccion/coleccion.php">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="../procesar_comentarios/experiencias.php">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form>
+            <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+            <input class="credenciales" type="email" id="campoUsuario" name="campoUsuario" placeholder="Usuario" >
+            <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña" > <br>
+            <input type="submit" id="botonInicioSesion" value="Iniciar sesión"></input>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header> 
+    
+    <!--Registro usuario-->
+    <main>
+      <h1>Registro de Usuarios</h1>
+      <form id="formularioRegistro" action="../procesar_usuarios/registro_usuario.php" method="post" >
+        <!--Correo electronico (input=email)-->
+        <input type="email" id="campoCorreo" name="campoCorreo" placeholder="Correo eletrónico" > 
+
+        <section class="contenedor-contraseña">
+          <!--Contraseña (input=password)-->
+          <input type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña" >
+          <input type="password" id="campoContraseña2" name="campoContraseña2" placeholder="Repita la Contraseña" >
+        </section>
+
+        <section class="contenedor-nombre">
+          <!--Nombre (input=text)-->
+          <input type="text" id="campoNombre" name="campoNombre" placeholder="Nombre" > 
+
+          <!--Apellidos (input=text)-->
+          <input type="text" id="campoApellidos" name="campoApellidos" placeholder="Apellidos" >       
+        </section>
+
+        <label id="label-pais" for="paises">Selecciona tu país</label>
+        <section class="localidad">
+          <!--Pais (datalist)-->
+          <datalist id="paises"> 
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Canadá">Canadá</option>
+            <option value="Reino Unido">Reino Unido</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Italia">Italia</option>
+            <option value="España">España</option>
+            <option value="China">China</option>
+            <option value="Japón">Japón</option>
+            <option value="Australia">Australia</option>
+          </datalist>
+          <input type="text" id="listaPaises" name="listaPaises" list="paises" placeholder="País" >
+            
+          <!--Ciudad (input=text)-->
+          <input type="text" id="campoCiudad" name="campoCiudad" placeholder="Ciudad" > 
+        </section>
+          
+        <!--Telefono (input=tel)-->
+        <input type="tel " id="campoDeTelefono" name="campoDeTelefono" placeholder="Teléfono móvil" > 
+
+        <!--Fecha de nacimiento (input=date)-->
+        <section class="nacimiento">
+          <label for="campoDeFecha">Fecha de nacimiento</label>
+          <input type="date" id="campoDeFecha" name="campoDeFecha" > 
+        </section>
+
+        <section class="politicas">
+          <input type="checkbox" id="campoPoliticas" name="campoPoliticas" value="1" >
+          <label for="campoPoliticas">Acepto las <strong>políticas de privacidad</strong> y <strong>condiciones generales</strong><label>
+        </section>
+        
+        <!--Registrarse (input=submit)-->
+        <input style="cursor: pointer;" type="submit" class="boton-envio" value="CREAR CUENTA"></input>
+      </form>
+      
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+      <a href="contacto.html">Contacto</a>
+      <a href="como_se_hizo.pdf">Informe de la práctica</a>
+    </footer>
+
+
+  </body>
+
+</html>

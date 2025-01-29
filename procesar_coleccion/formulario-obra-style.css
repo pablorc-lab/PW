@@ -1,0 +1,24 @@
+#formulario {
+    display: grid;
+}
+
+#formulario input {
+    font-size:20px;
+}
+
+.campo {
+    height: 40px;
+    padding-left: 10px;
+    background-color: rgb(255, 251, 195);
+    margin: auto 20px;
+}
+#formulario input::placeholder{
+    font-size:20px;
+}
+
+#boton {
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgb(80, 253, 140);
+    margin: auto 50px;
+}

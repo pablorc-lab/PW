@@ -1,0 +1,100 @@
+main {
+    font-family: 'Helvetica';
+    margin-bottom: 70px;
+}
+main img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+main article {
+    display: flex;
+}
+
+
+/***********************
+  Móvil: width <= 679px 
+************************/
+@media (max-width: 679px) {
+    .informacion h2{font-size: 10px;}
+    .informacion p {font-size: 15px;}
+
+    .relacionados {height: 150px;}
+    .relacionados h1 {font-size: 10px;}
+    .relacionados a{font-size: 9px;}      
+}
+  
+
+/************************************
+  Tablet: 680px <= width <= 1444px 
+************************************/
+@media (min-width: 680px) and (max-width: 1444px) {
+    .informacion h2{font-size: 14px;}
+    .informacion p {font-size: 20px;}
+
+    .relacionados {height: 250px;}
+    .relacionados h1 {font-size: 20px;}
+    .relacionados a{font-size: 17px;}
+}
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+
+    .informacion h2{font-size: 15px;}
+    .informacion p {font-size: 25px;}
+
+    .relacionados h1 {font-size: 30px;}
+    .relacionados a{font-size: 20px;}
+}
+
+
+/*================================
+    INFORMACION DE LA OBRA
+==================================*/
+.informacion {
+    margin: 0px 50px;
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.informacion section {
+    padding: 10px 15px;
+}
+
+.informacion h2{
+    color: brown;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+
+.informacion p {
+    color: rgb(92, 92, 92);
+    margin-top: 0;
+}
+
+/*================================
+    RELACIONADOS OTRAS OBRAS
+==================================*/
+.relacionados {
+    width: 33%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: #0a8bc7;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.relacionados h1 {
+    margin: 0;
+}
+.relacionados a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}

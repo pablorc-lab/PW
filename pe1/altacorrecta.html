@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Registro de usuarios</title>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "altacorrecta-style.css" />
+  </head>
+
+  <body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="../procesar_usuarios/index.php">Inicio</a></li>
+          <li><a href="../procesar_coleccion/coleccion.php">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="../procesar_comentarios/experiencias.php">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form method="POST">
+          <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+          <input class="credenciales" type="email" id="campoUsuario" name="campoUsuario" placeholder="Usuario" required>
+          <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña" required> <br>
+          <input type="submit" id="botonInicioSesion" value="Iniciar sesión"></input>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header> 
+    
+  
+    <!--Mensaje dado alta usuario-->
+    <main>
+        <section class="texto">
+            <h1>¡Registro Completado!</h1>
+            <p>Tu registro se ha completado con éxito.</p>
+        </section>
+        <section class="boton">
+            <a href="../procesar_usuarios/index.php">Volver</a>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+      <a href="contacto.html">Contacto</a>
+      <a href="como_se_hizo.pdf">Informe de la práctica</a>
+    </footer>
+
+
+  </body>
+
+</html>

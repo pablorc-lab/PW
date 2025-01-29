@@ -1,0 +1,99 @@
+
+main {
+    font-family: 'Helvetica';
+    display: grid;
+}
+
+
+/********************************
+  Móvil: 320px <= width <= 679px 
+*******************************/
+@media (min-width: 320px) and (max-width: 679.9px) {
+   
+    main h1{font-size: 25px;}
+
+    main ul {padding-left: 0px;}
+    
+    main p {
+        margin: 20px 35px;
+        font-size:20px;
+    }
+
+    main img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 399.9px) {
+    main h1{font-size: 20px;}
+}
+
+ /************************************
+   Tablet: 680px <= width <= 1444px 
+ ************************************/
+ @media (min-width: 680px) and (max-width: 1444px) {
+    main h1{font-size: 45px;}
+
+    main ul li{font-size:20px;}
+
+    main p {
+        margin: 20px 60px;
+        font-size:20px;
+    }
+}
+
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+
+    main h1{font-size: 50px;}
+
+    main ul li{font-size:25px;}
+
+    main p {
+        margin: 30px 20%;
+        font-size:25px;
+    }
+}
+
+
+main h1 {
+    text-align: center;
+    color: rgb(12, 141, 180);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main p {
+    text-align: center;
+    font-family:monospace;
+}
+
+main ul{
+    display: grid;
+    justify-content: center;
+}
+
+main ul li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    background-color: rgb(222, 234, 249);
+    border-radius: 15px;
+}
+
+main ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.logos {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

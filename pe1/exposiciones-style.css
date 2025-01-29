@@ -1,0 +1,77 @@
+main {
+    font-family: 'Helvetica';
+    margin-top: 50px;
+}
+
+main img {
+    width: 80%;
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/***********************
+  Móvil: width <= 679px 
+************************/
+@media (max-width: 679px) {
+    main figcaption h1 {font-size: 8px;}
+
+    main figcaption p {font-size: 15px;}
+}
+  
+
+/************************************
+  Tablet: 680px <= width <= 1444px 
+************************************/
+@media (min-width: 680px) and (max-width: 1444px) {
+    main figcaption h1 {font-size: 10px;}
+
+    main figcaption p {font-size: 20px;}
+}
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+    main figcaption h1 {font-size: 17px;}
+
+    main figcaption p {font-size: 25px;}
+
+    main figure figcaption{margin: 0px 200px;}
+}
+
+/*================================
+ ESTILO GENERAL PARA LA PÁGIBNA
+==================================*/
+main figure {
+    display: grid;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+main figure figcaption {
+    box-shadow: 5px 5px 7px black;
+    margin-top: 20px;
+    display: grid;
+    flex-wrap: wrap;
+    background-color: rgb(167, 167, 167);
+    border-radius: 15px;
+}
+
+main figcaption section{
+    text-align: justify;
+    padding: 25px 0px;
+}
+
+main figcaption h1, main figcaption p {
+    padding: 0 30px;
+    margin:0;
+}
+
+main figcaption h1 {
+    color: rgb(32, 50, 153);
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+main figcaption p {
+    color: rgb(32, 32, 32);
+}

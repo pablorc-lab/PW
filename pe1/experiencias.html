@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Experiencias</title>
+    <link rel = "stylesheet" type = "text/css" href = "header-footer.css" />
+    <link rel = "stylesheet" type = "text/css" href = "experiencias-style.css" />
+  </head>
+
+  <body>
+    <!--Cabecera-->
+    <header>
+      <!--Logotipo-->
+      <figure> 
+        <img id="logo" src="imagenes/logo.png " width="100px" height="100px">
+        <figcaption>Museo Invictus</figcaption> 
+      </figure> 
+
+      <!--Menu de navegación-->
+      <nav>
+        <ul>
+          <li><a href="../pe2/index.php">Inicio</a></li>
+          <li><a href="coleccion.html">Colección</a></li>
+          <li><a href="visita.html">Visita</a></li>
+          <li><a href="exposiciones.html">Exposiciones</a></li>
+          <li><a href="informacion.html">Información </a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+      </nav>
+
+      <!--Formulario inicio sesión de usuario-->
+      <section>
+        <form>
+          <!--Place holder : Permite mostrar un texto que desaperece al escribir-->
+          <input class="credenciales" type="email" id="campoUsuario" name="campoUsuario" placeholder="Usuario" required>
+          <input class="credenciales" type="password" id="campoContraseña" name="campoContraseña" placeholder="Contraseña" required> <br>
+          <input type="submit" id="botonInicioSesion" value="Iniciar sesión"></input>  
+        </form>
+        
+        <a id="registro" href="altausuarios.html"><p>Crear cuenta</p></a>
+      </section>      
+    </header> 
+    
+    <main>
+       <!--Formulario de opinion-->
+      <h1 id="h1-opiniones">Opiniones</h1>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Juan Pérez</p>
+            <p id="puntuacion">★★★✰✰</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "Excelente museo, aunque esperaba más variedad en las exposiciones.
+          Aun así, disfruté de mi visita. Le doy tres estrellas."
+        </p>        
+      </section>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Maria Dolores</p>
+            <p id="puntuacion">★★★★★</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "¡Una joya cultural! Quedé impresionada por la sectionersidad y calidad 
+          de las obras expuestas. Sin duda, un lugar que merece cinco estrellas."
+        </p>        
+      </section>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Carlos Martínez</p>
+            <p id="puntuacion">★★★★★</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "No puedo esperar para volver. Las instalaciones son impresionantes y 
+          la colección es fascinante. ¡Cinco estrellas sin duda!"
+        </p>        
+      </section>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Ana Gómez</p>
+            <p id="puntuacion">★★★★✰</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "Una experiencia enriquecedora. Me encantó la mezcla de arte tradicional 
+          y contemporáneo. Cuatro estrellas bien merecidas."
+        </p>        
+      </section>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Roberto Sánchez</p>
+            <p id="puntuacion">★★★★★</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "El museo superó mis expectativas. Las exposiciones son cautivadoras y 
+          la disposición de las obras es excelente. ¡Definitivamente, un lugar que 
+          merece cinco estrellas!"
+        </p>        
+      </section>
+
+      <section class="cotenedor-puntuacion">
+        <section class="puntuacion">
+          <img src="imagenes/usuario.png" width="50px" height="50px"> 
+          <section>
+            <p>Javier López</p>
+            <p id="puntuacion">★★★★✰</p>
+          </section>
+        </section>
+        <p id="opinion">
+          "Una visita muy interesante. Aunque algunas áreas estaban un poco 
+          abarrotadas, disfruté mucho de la variedad de obras expuestas. Les doy 
+          cuatro estrellas."
+        </p>        
+      </section>
+    
+
+      <!--Formulario de opinion-->
+      <h1 id="h1-formulario">¡Dejanos tu reseña!</h1>
+      <form>
+        <section class="reseña-valoracion">
+          <input type="radio" id="valoracion1" name="valoracion" value="1" required>
+          <label for="valoracion1">1</label>
+          
+          <input type="radio" id="valoracion2" name="valoracion" value="2">
+          <label for="valoracion2">2</label>
+          
+          <input type="radio" id="valoracion3" name="valoracion" value="3">
+          <label for="valoracion3">3</label>
+          
+          <input type="radio" id="valoracion4" name="valoracion" value="4">
+          <label for="valoracion4">4</label>
+          
+          <input type="radio" id="valoracion5" name="valoracion" value="5">
+          <label for="valoracion5">5</label>
+        </section>
+        
+        <label id="reseña-titulo" for="reseña-texto">Comentario</label>
+        <textarea id="reseña-texto" name="reseña-texto" rows="4" required></textarea>    
+
+        <button type="submit">PUBLICAR</button>
+      </form>
+    </main>
+    
+    <!--Pie de página-->
+    <footer>
+      <a href="contacto.html">Contacto</a>
+      <a href="como_se_hizo.pdf">Informe de la práctica</a>
+    </footer>
+  </body>
+</html>

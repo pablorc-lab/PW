@@ -1,0 +1,78 @@
+main {
+    font-family: 'Helvetica';
+}
+
+
+/********************************
+  Móvil: 320px <= width <= 679px 
+*******************************/
+@media (min-width: 320px) and (max-width: 679.9px) {
+   
+    main h1{font-size: 25px;}
+    main p {font-size: 15px;}
+
+
+    main a {font-size: 17px;}
+}
+
+ /************************************
+   Tablet: 680px <= width <= 1444px 
+ ************************************/
+ @media (min-width: 680px) and (max-width: 1444px) {
+    main h1{font-size: 45px;}
+    main p {font-size: 20px;}
+
+    main a {font-size: 17px;}
+}
+
+/*************************
+  Monitor: 1445px <= width 
+**************************/
+@media (min-width: 1445px) {
+    main h1{font-size: 55px;}
+    main p {font-size: 35px;}
+
+    main a {font-size: 35px;}
+}
+
+
+/*************************
+        GENERAL
+**************************/
+main h1 {
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+main p{
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+.texto {
+    display: grid;
+    justify-content: center;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+main a{
+    background-color: rgb(4, 175, 255);
+    border: 1px solid rgb(4, 175, 255);
+    border-radius: 85px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+}
+
+footer {
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+}
