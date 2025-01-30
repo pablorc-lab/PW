@@ -6,7 +6,8 @@
 
 Este proyecto es una página web full stack para un museo, desarrollada con HTML, CSS y JavaScript en el frontend, y PHP en el backend. Permite a los usuarios iniciar sesión, o dejar comentarios entre otros y, en el caso del administrador, añadir nuevas obras. Al ser mi primer proyecto web, es posible que hubiera aspectos muy mejorables.
 
-[![Home.png](https://i.postimg.cc/DyqrpxFV/image.png)](https://postimg.cc/Ln8gnBnv)
+---
+[![Home.webp](https://i.postimg.cc/L5sbmGVb/Captura.webp)](https://postimg.cc/xJWRRxhv)
 
 [![Visita.png](https://i.postimg.cc/NMtFBp2t/Captura.png)](https://postimg.cc/Z9f4LPLs)
 
